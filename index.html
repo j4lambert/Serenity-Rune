@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Serenity Rune - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Serenity Rune
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          serenityrune2922@email.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          0570-08-2922
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#skills">Projects</a>
+          <a class="topmenu" href="#skills">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://media.forgecdn.net/avatars/thumbnails/1066/586/256/256/638600619766811139.jpeg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hello, this is Serenity Rune, a metal musician from Copperdale who loves to stream video games and play musical instruments while also learning how to code.
+          </h1>
+          <p>
+            I am aiming to become a full stack developer by gaining experience in both application and presentation layers.
+            I have worked on applications and microservices deployed on IBM Cloud and am in the process of developing an AI system for Discord.
+            While not fighting space pirates in my favorite video game, Eve Online, I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, and the development of mods for Cities: Skylines and The Sims 4 to name a few.
+
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="https://cdn.pixabay.com/photo/2018/05/03/21/49/html5-3372584_1280.png" size=100px/> 
+          <h6>HTML</h6>
+          <p>1 month experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736401_1280.png" size=100px/>
+          <h6>JavaScript</h6>
+          <p>1 month experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2012/04/10/23/59/css-27192_1280.png" size=100px/>
+            <h6>CSS</h6>
+            <p>1 month experience</p>
+          </div>
+
+        <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2016/10/30/23/05/controller-1784571_1280.png"/>
+            <h6>Video gaming</h6>
+            <p>10 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2016/02/28/12/56/music-1226965_1280.png"/>
+            <h6>Guitar</h6>
+            <p>6 months experience</p>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2015/06/08/21/52/piano-802531_1280.png"/>
+            <h6>Piano</h6>
+            <p>5 years experience</p>
+          </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Chatbot</h3>
+            <ul>
+              <li>Developed a secure website integrated with a chatbot using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Videogame modding</h3>
+            <ul>
+              <li>Developed numerous mods for The Sims 4 and Cities: Skylines</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Patreon page</h3>
+            <ul>
+              <li>Created a page on Patreon showcasing my content</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Serenity is a very quick learner who is known to combine her knowledge of video gaming with that of web development.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Serenity's coding skills can help her create AI content for video games and social media services.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          She's so awesome in streaming video games and she can sure help me code my next major project.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your recommendation!</h3>
+      <button onclick="showPopup(false);">Ok</button>
+    </div>
+  </body>
+</html>
