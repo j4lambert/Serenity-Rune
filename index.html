@@ -1,183 +1,271 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Serenity Rune - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Food LLC</h1></a>
+            
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:1800 FOOD LLC">
+                <span>1800 FOOD LLC</span></a><div>* We Deliver</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+<style>
+
+  /********** Base styles **********/
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    background-color: #ff6319;
+    font-family: Helvetica;
+    color: white;
+  }
+  h3 {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-family: Helvetica;
+  }
+  h2{
+      border: 1px solid black;
+    background-color: #019a66;
+    width: 90%;
+    height: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: white;  
+  }
+  
+  p {
+    border: 1px solid black;
+    background-color: #ff6319;
+    width: 90%;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: white;
+  }
+  
+  /* Simple Responsive Framework. */
+  .row {
+    width: 100%;
+  }
+  
+  /********** Large devices only **********/
+  @media (min-width: 1200px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;
+      
+    }
+    .col-lg-1 {
+      width: 8.33%;
+    }
+    .col-lg-2 {
+      width: 16.66%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-8 {
+      width: 66.66%;
+    }
+    .col-lg-9 {
+      width: 74.99%;
+    }
+    .col-lg-10 {
+      width: 83.33%;
+    }
+    .col-lg-11 {
+      width: 91.66%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: left;
+      
+    }
+    .col-md-1 {
+      width: 8.33%;
+    }
+    .col-md-2 {
+      width: 16.66%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .col-md-5 {
+      width: 41.66%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.33%;
+    }
+    .col-md-8 {
+      width: 66.66%;
+    }
+    .col-md-9 {
+      width: 74.99%;
+    }
+    .col-md-10 {
+      width: 83.33%;
+    }
+    .col-md-11 {
+      width: 91.66%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+  /********** Medium devices only **********/
+  @media (min-width: 767px) and (max-width: 992px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: left;
+      
+    }
+    .col-md-1 {
+      width: 8.33%;
+    }
+    .col-md-2 {
+      width: 16.66%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .col-md-5 {
+      width: 41.66%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.33%;
+    }
+    .col-md-8 {
+      width: 66.66%;
+    }
+    .col-md-9 {
+      width: 74.99%;
+    }
+    .col-md-10 {
+      width: 83.33%;
+    }
+    .col-md-11 {
+      width: 91.66%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+  </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Serenity Rune
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          serenityrune2922@email.com
-        </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          0570-08-2922
-
-        </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#skills">Projects</a>
-          <a class="topmenu" href="#skills">Recommendations</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-
-        </div>
-      </div>    
-    </nav>
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://media.forgecdn.net/avatars/thumbnails/1066/586/256/256/638600619766811139.jpeg" class="profile_image"/>
-      </div>
-
-      <div>
-          <h1>
-            Hello, this is Serenity Rune, a metal musician from Copperdale who loves to stream video games and play musical instruments while also learning how to code.
-          </h1>
-          <p>
-            I am aiming to become a full stack developer by gaining experience in both application and presentation layers.
-            I have worked on applications and microservices deployed on IBM Cloud and am in the process of developing an AI system for Discord.
-            While not fighting space pirates in my favorite video game, Eve Online, I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, and the development of mods for Cities: Skylines and The Sims 4 to name a few.
-
-          </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="https://cdn.pixabay.com/photo/2018/05/03/21/49/html5-3372584_1280.png" size=100px/> 
-          <h6>HTML</h6>
-          <p>1 month experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736401_1280.png" size=100px/>
-          <h6>JavaScript</h6>
-          <p>1 month experience</p>
-        </div>  
-
-        <div class="skill">
-            <img src="https://cdn.pixabay.com/photo/2012/04/10/23/59/css-27192_1280.png" size=100px/>
-            <h6>CSS</h6>
-            <p>1 month experience</p>
-          </div>
-
-        <div class="skill">
-            <img src="https://cdn.pixabay.com/photo/2016/10/30/23/05/controller-1784571_1280.png"/>
-            <h6>Video gaming</h6>
-            <p>10 years experience</p>
-          </div>
-
-          <div class="skill">
-            <img src="https://cdn.pixabay.com/photo/2016/02/28/12/56/music-1226965_1280.png"/>
-            <h6>Guitar</h6>
-            <p>6 months experience</p>
-          </div>
-          <div class="skill">
-            <img src="https://cdn.pixabay.com/photo/2015/06/08/21/52/piano-802531_1280.png"/>
-            <h6>Piano</h6>
-            <p>5 years experience</p>
-          </div>
-
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Chatbot</h3>
-            <ul>
-              <li>Developed a secure website integrated with a chatbot using HTML, CSS, JavaScript and IBM Watson Assistant</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Videogame modding</h3>
-            <ul>
-              <li>Developed numerous mods for The Sims 4 and Cities: Skylines</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Patreon page</h3>
-            <ul>
-              <li>Created a page on Patreon showcasing my content</li>
-            </ul>
-          </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Serenity is a very quick learner who is known to combine her knowledge of video gaming with that of web development.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Serenity's coding skills can help her create AI content for video games and social media services.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          She's so awesome in streaming video games and she can sure help me code my next major project.
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-      </a>
-    </div>
-
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Thank you for your recommendation!</h3>
-      <button onclick="showPopup(false);">Ok</button>
-    </div>
+  <h3><center>Our Menu</center></h3>
+  
+  <div class="row">
+    <div class="col-lg-3 col-md-6"><h2>Chicken</h2><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis felis nec imperdiet mattis. Phasellus vehicula, elit at sagittis pulvinar, urna dolor euismod urna, vel egestas velit metus in quam. Maecenas facilisis leo id malesuada bibendum. Praesent quis tortor in felis accumsan fermentum eu et turpis. Nunc nibh diam, vestibulum id mi vel, tempus cursus purus. Sed nec risus risus. Sed mattis blandit justo efficitur mattis. Etiam non tortor lorem. Duis volutpat quam arcu, sit amet consequat felis lacinia vitae. Pellentesque viverra vehicula dolor, id vehicula sem cursus sit amet. In eget dictum neque, quis tempor magna. Duis rhoncus mattis velit vel vulputate. Quisque rhoncus, diam sed tristique dapibus, nisi diam porta est, in ultrices nulla augue non diam. Donec ornare aliquet ligula, nec aliquam justo interdum ut. Nulla facilisi. Integer vitae mi ut tortor bibendum tincidunt.
+    </p></div>
+    <div class="col-lg-3 col-md-6"><h2>Beef</h2><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis felis nec imperdiet mattis. Phasellus vehicula, elit at sagittis pulvinar, urna dolor euismod urna, vel egestas velit metus in quam. Maecenas facilisis leo id malesuada bibendum. Praesent quis tortor in felis accumsan fermentum eu et turpis. Nunc nibh diam, vestibulum id mi vel, tempus cursus purus. Sed nec risus risus. Sed mattis blandit justo efficitur mattis. Etiam non tortor lorem. Duis volutpat quam arcu, sit amet consequat felis lacinia vitae. Pellentesque viverra vehicula dolor, id vehicula sem cursus sit amet. In eget dictum neque, quis tempor magna. Duis rhoncus mattis velit vel vulputate. Quisque rhoncus, diam sed tristique dapibus, nisi diam porta est, in ultrices nulla augue non diam. Donec ornare aliquet ligula, nec aliquam justo interdum ut. Nulla facilisi. Integer vitae mi ut tortor bibendum tincidunt.
+    </p></div>
+    <div class="col-lg-3 col-md-6"><h2>Sushi</h2><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis felis nec imperdiet mattis. Phasellus vehicula, elit at sagittis pulvinar, urna dolor euismod urna, vel egestas velit metus in quam. Maecenas facilisis leo id malesuada bibendum. Praesent quis tortor in felis accumsan fermentum eu et turpis. Nunc nibh diam, vestibulum id mi vel, tempus cursus purus. Sed nec risus risus. Sed mattis blandit justo efficitur mattis. Etiam non tortor lorem. Duis volutpat quam arcu, sit amet consequat felis lacinia vitae. Pellentesque viverra vehicula dolor, id vehicula sem cursus sit amet. In eget dictum neque, quis tempor magna. Duis rhoncus mattis velit vel vulputate. Quisque rhoncus, diam sed tristique dapibus, nisi diam porta est, in ultrices nulla augue non diam. Donec ornare aliquet ligula, nec aliquam justo interdum ut. Nulla facilisi. Integer vitae mi ut tortor bibendum tincidunt.
+    </p></div>
+    <div class="col-lg-3 col-md-6"><h2>Fish</h2><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis felis nec imperdiet mattis. Phasellus vehicula, elit at sagittis pulvinar, urna dolor euismod urna, vel egestas velit metus in quam. Maecenas facilisis leo id malesuada bibendum. Praesent quis tortor in felis accumsan fermentum eu et turpis. Nunc nibh diam, vestibulum id mi vel, tempus cursus purus. Sed nec risus risus. Sed mattis blandit justo efficitur mattis. Etiam non tortor lorem. Duis volutpat quam arcu, sit amet consequat felis lacinia vitae. Pellentesque viverra vehicula dolor, id vehicula sem cursus sit amet. In eget dictum neque, quis tempor magna. Duis rhoncus mattis velit vel vulputate. Quisque rhoncus, diam sed tristique dapibus, nisi diam porta est, in ultrices nulla augue non diam. Donec ornare aliquet ligula, nec aliquam justo interdum ut. Nulla facilisi. Integer vitae mi ut tortor bibendum tincidunt.
+    </p></div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6"><h2>Chicken</h2><p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis felis nec imperdiet mattis. Phasellus vehicula, elit at sagittis pulvinar, urna dolor euismod urna, vel egestas velit metus in quam. Maecenas facilisis leo id malesuada bibendum. Praesent quis tortor in felis accumsan fermentum eu et turpis. Nunc nibh diam, vestibulum id mi vel, tempus cursus purus. Sed nec risus risus. Sed mattis blandit justo efficitur mattis. Etiam non tortor lorem. Duis volutpat quam arcu, sit amet consequat felis lacinia vitae. Pellentesque viverra vehicula dolor, id vehicula sem cursus sit amet. In eget dictum neque, quis tempor magna. Duis rhoncus mattis velit vel vulputate. Quisque rhoncus, diam sed tristique dapibus, nisi diam porta est, in ultrices nulla augue non diam. Donec ornare aliquet ligula, nec aliquam justo interdum ut. Nulla facilisi. Integer vitae mi ut tortor bibendum tincidunt.
+      </p></div>
+      <div class="col-lg-3 col-md-6"><h2>Beef</h2><p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis felis nec imperdiet mattis. Phasellus vehicula, elit at sagittis pulvinar, urna dolor euismod urna, vel egestas velit metus in quam. Maecenas facilisis leo id malesuada bibendum. Praesent quis tortor in felis accumsan fermentum eu et turpis. Nunc nibh diam, vestibulum id mi vel, tempus cursus purus. Sed nec risus risus. Sed mattis blandit justo efficitur mattis. Etiam non tortor lorem. Duis volutpat quam arcu, sit amet consequat felis lacinia vitae. Pellentesque viverra vehicula dolor, id vehicula sem cursus sit amet. In eget dictum neque, quis tempor magna. Duis rhoncus mattis velit vel vulputate. Quisque rhoncus, diam sed tristique dapibus, nisi diam porta est, in ultrices nulla augue non diam. Donec ornare aliquet ligula, nec aliquam justo interdum ut. Nulla facilisi. Integer vitae mi ut tortor bibendum tincidunt.
+      </p></div>
+      <div class="col-lg-3 col-md-6"><h2>Sushi</h2><p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis felis nec imperdiet mattis. Phasellus vehicula, elit at sagittis pulvinar, urna dolor euismod urna, vel egestas velit metus in quam. Maecenas facilisis leo id malesuada bibendum. Praesent quis tortor in felis accumsan fermentum eu et turpis. Nunc nibh diam, vestibulum id mi vel, tempus cursus purus. Sed nec risus risus. Sed mattis blandit justo efficitur mattis. Etiam non tortor lorem. Duis volutpat quam arcu, sit amet consequat felis lacinia vitae. Pellentesque viverra vehicula dolor, id vehicula sem cursus sit amet. In eget dictum neque, quis tempor magna. Duis rhoncus mattis velit vel vulputate. Quisque rhoncus, diam sed tristique dapibus, nisi diam porta est, in ultrices nulla augue non diam. Donec ornare aliquet ligula, nec aliquam justo interdum ut. Nulla facilisi. Integer vitae mi ut tortor bibendum tincidunt.
+      </p></div>
+      <div class="col-lg-3 col-md-6"><h2>Fish</h2><p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis felis nec imperdiet mattis. Phasellus vehicula, elit at sagittis pulvinar, urna dolor euismod urna, vel egestas velit metus in quam. Maecenas facilisis leo id malesuada bibendum. Praesent quis tortor in felis accumsan fermentum eu et turpis. Nunc nibh diam, vestibulum id mi vel, tempus cursus purus. Sed nec risus risus. Sed mattis blandit justo efficitur mattis. Etiam non tortor lorem. Duis volutpat quam arcu, sit amet consequat felis lacinia vitae. Pellentesque viverra vehicula dolor, id vehicula sem cursus sit amet. In eget dictum neque, quis tempor magna. Duis rhoncus mattis velit vel vulputate. Quisque rhoncus, diam sed tristique dapibus, nisi diam porta est, in ultrices nulla augue non diam. Donec ornare aliquet ligula, nec aliquam justo interdum ut. Nulla facilisi. Integer vitae mi ut tortor bibendum tincidunt.
+      </p></div>
+  </div>
+  
   </body>
-</html>
+  </html>
